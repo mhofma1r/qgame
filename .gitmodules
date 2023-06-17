@@ -1,0 +1,3 @@
+[submodule ".envQgame"]
+	path = .envQgame
+	url = git@github.com:mhofma1r/webdev3.git
