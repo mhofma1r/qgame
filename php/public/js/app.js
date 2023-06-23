@@ -5,6 +5,7 @@ $(document).ready(function () {
     $('.answerPool').hide();
     $('.questionSection').hide()
     $('.answers').hide()
+    $('.resultmsgBtn.button').hide()
     /**
      * @description contains the Applications Datascructure
      */
@@ -41,22 +42,41 @@ $(document).ready(function () {
             }.bind(this));
         },
         checkAnswer: function (element, event) {
+            let nextButton = $('').click(function (event) {
+                console.log(' click behaviour')
+            })
             if (event.type === 'mousedown') {
+                $('.resultmsgBtn.button.false').click(function (e){
+                    console.log('false click!')
+                    $(this).hide()
+
+                })
+                $('.resultmsgBtn.button.correct').click(function (e){
+                    console.log('correct click!')
+                    $(this).hide()
+                    location.reload();
+
+                })
                 let proposedAnswer = element[0].attributes.itemkey.value
                 let correctAnswer = document.qgame.lockedCorrect
+
                 if (proposedAnswer === correctAnswer) {
+                    console.log('correct Triggered')
+
                     $('.resultmsg p').html('Sehr gut! Die Antwort ist Richtig')
-                    $('.resultmsg').append(nextButton)
+                    $('.resultmsgBtn.button.false').hide()
+                    $('.resultmsgBtn.button.correct').show()
+                    $('.resultmsg').attr('title','correct!')
+                    $('.resultmsg').show()
                     $(".resultmsg").dialog();
 
                     return
                 }
             }
+            $('.resultmsgBtn.button.correct').hide()
+            $('.resultmsgBtn.button.false').show()
+            $('.resultmsg').attr('title','false!')
             $('.resultmsg p').html('Sorry deine Antwort war nicht leider nicht richtig.Du kannst das Fenster Schließen!')
-            let nextButton = $('').click(function (event) {
-
-            })
-            $('.resultmsg').append(nextButton)
             $(".resultmsg").dialog();
 
         },

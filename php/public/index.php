@@ -30,7 +30,8 @@
 
 					<div class="resultmsg" title="Basic dialog">
 						<p>Sorry deine Antwort war nicht leider nicht richtig.Du kannst das Fenster Schließen!</p>
-						<a class="resultmsgBtn button">Weiter </a>
+						<a class="resultmsgBtn button false">Nächster Versuch</a>
+						<a class="resultmsgBtn button correct">Nächste Frage</a>
 					</div>
 				</div>
 				<section class="questionSection">
