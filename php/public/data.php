@@ -2,7 +2,11 @@
 function data(){
     $data = [
         "IT (Hardware)" => [
+<<<<<<< HEAD
             'text' => "Woführ steht die Abküruzung CPU?",
+=======
+            'text' => "Was Bedeutet CPU Ausgeschrieben?",
+>>>>>>> master
             'correct' => 'Central Processing Unit',
             'decoyanswer' => [
                 'Control Processing Unit',
