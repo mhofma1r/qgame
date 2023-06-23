@@ -46,12 +46,12 @@ $(document).ready(function () {
                 console.log(' click behaviour')
             })
             if (event.type === 'mousedown') {
-                $('.resultmsgBtn.button.false').click(function (e){
+                $('.resultmsgBtn.button.false').click(function (e) {
                     console.log('false click!')
                     $(this).hide()
 
                 })
-                $('.resultmsgBtn.button.correct').click(function (e){
+                $('.resultmsgBtn.button.correct').click(function (e) {
                     console.log('correct click!')
                     $(this).hide()
                     location.reload();
@@ -59,24 +59,28 @@ $(document).ready(function () {
                 })
                 let proposedAnswer = element[0].attributes.itemkey.value
                 let correctAnswer = document.qgame.lockedCorrect
-
+                if (proposedAnswer === 'KI') {
+                    window.location.replace("https://www.youtube.com/watch?v=GtL1huin9EE?autoplay=1")
+                    return
+                }
                 if (proposedAnswer === correctAnswer) {
                     console.log('correct Triggered')
 
                     $('.resultmsg p').html('Sehr gut! Die Antwort ist Richtig')
                     $('.resultmsgBtn.button.false').hide()
                     $('.resultmsgBtn.button.correct').show()
-                    $('.resultmsg').attr('title','correct!')
+                    $('.resultmsg').attr('title', 'correct!')
                     $('.resultmsg').show()
                     $(".resultmsg").dialog();
 
                     return
                 }
+
             }
             $('.resultmsgBtn.button.correct').hide()
             $('.resultmsgBtn.button.false').show()
-            $('.resultmsg').attr('title','false!')
-            $('.resultmsg p').html('Sorry deine Antwort war nicht leider nicht richtig.Du kannst das Fenster Schließen!')
+            $('.resultmsg').attr('title', 'false!')
+            $('.resultmsg p').html('Sorry deine Antwort war leider nicht richtig.')
             $(".resultmsg").dialog();
 
         },
