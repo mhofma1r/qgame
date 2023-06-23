@@ -2,24 +2,24 @@
 function data(){
     $data = [
         "IT (Hardware)" => [
-            'text' => "What does CPU stand for?",
+            'text' => "Woführ steht die Abküruzung CPU?",
             'correct' => 'Central Processing Unit',
             'decoyanswer' => [
                 'Control Processing Unit',
-                'Computer Personal Unit',
-                'Central Process Unit'
+                'Computer Personal Unit'
             ]
         ],
         "IT (Coding 1)" => [
-            'text' => "Which programming language mostly used for web development?",
+            'text' => "Welche Programmiersprache wird am häufigsten für die Entwicklung von Webseiten verwendet.",
             'correct' => 'HTML',
             'decoyanswer' => [
-                'Java',
-                'C++'
+                'C++',
+				
+				
             ]
         ],
         "IT (Coding 2)" => [
-            'text' => "What does HTML stand for?",
+            'text' => "Woführ steht die Abküruzung HTML?",
             'correct' => 'Hypertext Markup Language',
             'decoyanswer' => [
                 'Hyperlink and Text Markup Language',
@@ -28,25 +28,28 @@ function data(){
             ]
         ],
         "IT (Coding 3)" => [
-            'text' => "What is the purpose of CSS in web development?",
-            'correct' => 'Styling and formatting web pages',
+            'text' => "Wofür wird CSS in der webentwicklung verwendet?",
+            'correct' => 'Styling,Design und Formatierung.',
             'decoyanswer' => [
-                'Handling server-side logic',
-                'Managing databases',
-                'Implementing interactivity'
+                'Verarbeitung Serverseitiger anfragen',
+                'Verwaltung von Datenbanken',
+                'für Interaktivität',
+				'KI'
             ]
         ],
         "IT (Netzwerke 1)" => [
-            'text' => "Which protocol is used to transfer files from a local machine to a remote server?",
+            'text' => "Welches Protokoll wird für <strong>unverschlüsselten</strong> datentransfer verwendet?",
             'correct' => 'FTP (File Transfer Protocol)',
             'decoyanswer' => [
-                'HTTP (Hypertext Transfer Protocol)',
                 'SMTP (Simple Mail Transfer Protocol)',
-                'SSH (Secure Shell)'
+                'SSH (Secure Shell)',
+				'Gmail',
+				'Hotmail',
+				'Tormail'
             ]
         ],
         "IT (Netzwerke 2)" => [
-            'text' => "What does DNS stand for in networking?",
+            'text' => "Woführ steht die Abküruzung DNS?",
             'correct' => 'Domain Name System',
             'decoyanswer' => [
                 'Dynamic Network System',
@@ -55,21 +58,22 @@ function data(){
             ]
         ],
         "IT (Datenbanken)" => [
-            'text' => "Which database language is commonly used for querying and managing data?",
-            'correct' => 'SQL (Structured Query Language)',
+            'text' => "Welche Programmiersprache wird für die Verwaltung von Datenbanken verwendet?",
+            'correct' => 'SQL ',
             'decoyanswer' => [
                 'JavaScript',
                 'Python',
-                'Ruby'
+                'Ruby',
+				'DSGVO',
+				'In Minecraft Legacy'
             ]
         ],
         "IT (Netzwerke 3)" => [
-            'text' => "What is the purpose of a firewall in computer security?",
-            'correct' => 'To monitor and control network traffic',
+            'text' => "was ist der zweck einer Firewall im bezug auf IT-Security?",
+            'correct' => 'Zum beobachten und Steuern der Kommunikation der Lokalen Netzwerke.',
             'decoyanswer' => [
-                'To encrypt data',
-                'To store passwords',
-                'To detect malware'
+                'Für Verschlüsselung',
+                'zum Entsichern der Eigenen Netzwerke.'
             ]
         ],
         "IT (Coding 4)" => [
