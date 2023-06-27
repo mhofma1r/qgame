@@ -2,7 +2,7 @@
 function data(){
     $data = [
         "IT (Hardware)" => [
-            'text' => "Woführ steht die Abküruzung CPU?",
+            'text' => "Woführ steht die Abküruzung CPU? (Tipp CPU bedeutet ins Deutsche übersetzt Prozessor bzw. 'Zentrale Rechen Einheit')",
             'correct' => 'Central Processing Unit',
             'decoyanswer' => [
                 'Control Processing Unit',
@@ -10,7 +10,7 @@ function data(){
             ]
         ],
         "IT (Coding 1)" => [
-            'text' => "Welche Programmiersprache wird am häufigsten für die Entwicklung von Webseiten verwendet.",
+            'text' => "Welche Programmiersprache wird am häufigsten für die Entwicklung von Webseiten verwendet.(Tipp gesucht ist eine Abkürzung mit 4 Buchstaben)",
             'correct' => 'HTML',
             'decoyanswer' => [
                 'C++',
@@ -19,7 +19,7 @@ function data(){
             ]
         ],
         "IT (Coding 2)" => [
-            'text' => "Woführ steht die Abküruzung HTML?",
+            'text' => "Woführ steht die Abküruzung HTML? (Tipp Die Ersten 2 Buchstaben der Abkürzung bilden gemeinsam ein Wort.)",
             'correct' => 'Hypertext Markup Language',
             'decoyanswer' => [
                 'Hyperlink and Text Markup Language',
@@ -28,7 +28,7 @@ function data(){
             ]
         ],
         "IT (Coding 3)" => [
-            'text' => "Wofür wird CSS in der webentwicklung verwendet?",
+            'text' => "Wofür wird CSS in der webentwicklung verwendet? (Tipp CSS ist extrem wichtig schöne Webseiten zu Gestalten und ist meißtens eher unwichtig für die Korrekte Funktionsweise.)",
             'correct' => 'Styling,Design und Formatierung.',
             'decoyanswer' => [
                 'Verarbeitung Serverseitiger anfragen',
@@ -38,7 +38,7 @@ function data(){
             ]
         ],
         "IT (Netzwerke 1)" => [
-            'text' => "Welches Protokoll wird für <strong>unverschlüsselten</strong> datentransfer verwendet?",
+            'text' => "Welches Protokoll wird für <strong>unverschlüsselten</strong> datentransfer verwendet?(Tipp es handelt sich um eine Abkürzung mit 3 Buchstaben)",
             'correct' => 'FTP (File Transfer Protocol)',
             'decoyanswer' => [
                 'SMTP (Simple Mail Transfer Protocol)',
@@ -49,7 +49,7 @@ function data(){
             ]
         ],
         "IT (Netzwerke 2)" => [
-            'text' => "Woführ steht die Abküruzung DNS?",
+            'text' => "Woführ steht die Abküruzung DNS?(Tipp DNS ist ein Protokoll welches IP Adressen <strong>Systemisch</strong> in <strong>Domainnamen</strong> übersetzt und wird gebildet aus drei Worten.)",
             'correct' => 'Domain Name System',
             'decoyanswer' => [
                 'Dynamic Network System',
@@ -58,7 +58,7 @@ function data(){
             ]
         ],
         "IT (Datenbanken)" => [
-            'text' => "Welche Programmiersprache wird für die Verwaltung von Datenbanken verwendet?",
+            'text' => "Welche Programmiersprache wird für die Verwaltung von Datenbanken verwendet?(Tipp gesucht wird eine Abkürzung mit 3 Buchstaben)",
             'correct' => 'SQL ',
             'decoyanswer' => [
                 'JavaScript',
@@ -68,16 +68,8 @@ function data(){
 				'In Minecraft Legacy'
             ]
         ],
-        "IT (Netzwerke 3)" => [
-            'text' => "was ist der zweck einer Firewall im bezug auf IT-Security?",
-            'correct' => 'Zum beobachten und Steuern der Kommunikation der Lokalen Netzwerke.',
-            'decoyanswer' => [
-                'Für Verschlüsselung',
-                'zum Entsichern der Eigenen Netzwerke.'
-            ]
-        ],
         "IT (Coding 4)" => [
-            'text' => "What is the file extension for a JavaScript file?",
+            'text' => "Welche Dateiendung wird für JavaScript (JS) verwendet?(Tipp Dateiendungen sind Beispielsweise .exe für Programme oder .jpg für Bilder)",
             'correct' => '.js',
             'decoyanswer' => [
                 '.html',
@@ -85,13 +77,12 @@ function data(){
                 '.php'
             ]
         ],
-        "IT (Coding 5)" => [
-            'text' => "Which programming language is primarily used for iOS app development?",
-            'correct' => 'Swift',
+        
+		"KI (Coding 05)" => [
+            'text' => "ein Typischer Desktop PC besteht aus den folgenden Komponenten?",
+            'correct' => 'Festplatte, Mainbord, Prozessor, Arbeitsspeicher & Grafikkarte,Netzteil',
             'decoyanswer' => [
                 'Java',
-                'C#',
-                'Objective-C'
             ]
         ],
     ];
