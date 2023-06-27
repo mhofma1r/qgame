@@ -1,7 +1,7 @@
 <?php
 function data(){
     $data = [
-        "IT (Hardware)" => [
+        "IT (Hardware 1)" => [
             'text' => "Woführ steht die Abküruzung CPU? (Tipp CPU bedeutet ins Deutsche übersetzt Prozessor bzw. 'Zentrale Rechen Einheit')",
             'correct' => 'Central Processing Unit',
             'decoyanswer' => [
@@ -78,7 +78,7 @@ function data(){
             ]
         ],
         
-		"KI (Coding 05)" => [
+		"IT (Hardware 02)" => [
             'text' => "ein Typischer Desktop PC besteht aus den folgenden Komponenten?",
             'correct' => 'Festplatte, Mainbord, Prozessor, Arbeitsspeicher & Grafikkarte,Netzteil',
             'decoyanswer' => [
