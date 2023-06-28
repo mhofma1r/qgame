@@ -2,7 +2,7 @@
 function data(){
     $data = [
         "IT (Hardware 1)" => [
-            'text' => "Woführ steht die Abküruzung CPU? (Tipp CPU bedeutet ins Deutsche übersetzt Prozessor bzw. 'Zentrale Rechen Einheit')",
+            'text' => "Wofür steht die Abkürzung CPU? (Tipp CPU bedeutet ins Deutsche übersetzt Prozessor bzw. 'Zentrale Recheneinheit')",
             'correct' => 'Central Processing Unit',
             'decoyanswer' => [
                 'Control Processing Unit',
@@ -19,7 +19,7 @@ function data(){
             ]
         ],
         "IT (Coding 2)" => [
-            'text' => "Woführ steht die Abküruzung HTML? (Tipp Die Ersten 2 Buchstaben der Abkürzung bilden gemeinsam ein Wort.)",
+            'text' => "Wofür steht die Abkürzung HTML? (Tipp, Die ersten 2 Buchstaben der Abkürzung bilden gemeinsam ein Wort.)",
             'correct' => 'Hypertext Markup Language',
             'decoyanswer' => [
                 'Hyperlink and Text Markup Language',
@@ -28,8 +28,8 @@ function data(){
             ]
         ],
         "IT (Coding 3)" => [
-            'text' => "Wofür wird CSS in der webentwicklung verwendet? (Tipp CSS ist extrem wichtig schöne Webseiten zu Gestalten und ist meißtens eher unwichtig für die Korrekte Funktionsweise.)",
-            'correct' => 'Styling,Design und Formatierung.',
+            'text' => "Wofür wird CSS in der Webentwicklung verwendet? (Tipp CSS ist extrem wichtig schöne Webseiten zu gestalten und ist meistens eher unwichtig für die korrekte Funktionsweise.)",
+            'correct' => 'Styling, Design und Formatierung.',
             'decoyanswer' => [
                 'Verarbeitung Serverseitiger anfragen',
                 'Verwaltung von Datenbanken',
@@ -38,7 +38,7 @@ function data(){
             ]
         ],
         "IT (Netzwerke 1)" => [
-            'text' => "Welches Protokoll wird für <strong>unverschlüsselten</strong> datentransfer verwendet?(Tipp es handelt sich um eine Abkürzung mit 3 Buchstaben)",
+            'text' => "Welches Protokoll wird für <strong>unverschlüsselten</strong> Datentransfer verwendet?(Tipp es handelt sich um eine Abkürzung mit 3 Buchstaben)",
             'correct' => 'FTP (File Transfer Protocol)',
             'decoyanswer' => [
                 'SMTP (Simple Mail Transfer Protocol)',
@@ -49,7 +49,7 @@ function data(){
             ]
         ],
         "IT (Netzwerke 2)" => [
-            'text' => "Woführ steht die Abküruzung DNS?(Tipp DNS ist ein Protokoll welches IP Adressen <strong>Systemisch</strong> in <strong>Domainnamen</strong> übersetzt und wird gebildet aus drei Worten.)",
+            'text' => "Wofür steht die Abkürzung DNS?(Tipp DNS ist ein Protokoll welches IP Adressen <strong>Systemisch</strong> in <strong>Domainnamen</strong> übersetzt und wird gebildet aus drei Worten.)",
             'correct' => 'Domain Name System',
             'decoyanswer' => [
                 'Dynamic Network System',
@@ -58,7 +58,7 @@ function data(){
             ]
         ],
         "IT (Datenbanken)" => [
-            'text' => "Welche Programmiersprache wird für die Verwaltung von Datenbanken verwendet?(Tipp gesucht wird eine Abkürzung mit 3 Buchstaben)",
+            'text' => "Welche Programmiersprache wird für die Verwaltung von Datenbanken verwendet?(Tipp, gesucht wird eine Abkürzung mit 3 Buchstaben)",
             'correct' => 'SQL ',
             'decoyanswer' => [
                 'JavaScript',
@@ -69,7 +69,7 @@ function data(){
             ]
         ],
         "IT (Coding 4)" => [
-            'text' => "Welche Dateiendung wird für JavaScript (JS) verwendet?(Tipp Dateiendungen sind Beispielsweise .exe für Programme oder .jpg für Bilder)",
+            'text' => "Welche Dateiendung wird für JavaScript (JS) verwendet?(Tipp Dateiendungen sind beispielsweise .exe für Programme oder .jpg für Bilder)",
             'correct' => '.js',
             'decoyanswer' => [
                 '.html',
@@ -79,8 +79,8 @@ function data(){
         ],
         
 		"IT (Hardware 02)" => [
-            'text' => "ein Typischer Desktop PC besteht aus den folgenden Komponenten?",
-            'correct' => 'Festplatte, Mainbord, Prozessor, Arbeitsspeicher & Grafikkarte,Netzteil',
+            'text' => "Aus welchen Komponenten besteht ein handelsüblicher Desktop PC?",
+            'correct' => 'Festplatte, Mainboard, Prozessor, Arbeitsspeicher, Grafikkarte & Netzteil',
             'decoyanswer' => [
                 'Java',
             ]
