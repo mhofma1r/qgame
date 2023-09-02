@@ -10,8 +10,53 @@ $(document).ready(function () {
      * @description contains the Applications Datascructure
      */
 
+    $('#nextQuestionBtn').click(function () {
+        getNextQuestion();
+    });
+
+
+    $('#additionalQuestionsBtn').click(function () {
+        getAdditionalQuestions();
+    });
+
+
+    function getAdditionalQuestions() {
+        $.get("get_questions.php", function (data) {
+            try {
+                if (data.length > 0) {
+                    var randomIndex = Math.floor(Math.random() * data.length);
+                    var questionData = data[randomIndex];
+                    displayQuestion(questionData);
+                } else {
+                    alert("Error");
+                }
+            } catch (error) {
+                console.error("Error reading the data: ", error);
+            }
+        });
+    }
+
+    function displayQuestion(questionData) {
+        $('.questionSection p').html(questionData.text);
+        $('.answerCardGrid').empty();
+    
+        questionData.decoyanswer.forEach(function (answer) {
+            var newAnswerElement = $('<div class="answer"><a>' + answer + '</a></div>');
+            $('.answerCardGrid').append(newAnswerElement);
+        });
+    
+        $('.answer').on('mousedown', function (event) {
+            //checkAnswerForAdditionalQuestions($(this), event, questionData);
+            console.log("Click");
+        });
+    
+        $('.questionSection').show();
+        $('.answers').fadeIn();
+    }
+
     document.qgame = {
 
+        
         getDecoyquestionsPool: function () {
             return this.decoyquestionsPool
         },
