@@ -28,13 +28,13 @@
 					</section>
 					<section class="questionText"></section>
 					<hr>
-					<div style="display: none">
-						<div class="resultmsg" title="Basic dialog">
-							<p>Sorry deine Antwort war nicht leider nicht richtig.Du kannst das Fenster Schließen!</p>
-							<a class="resultmsgBtn button false">Nächster Versuch</a>
-							<a class="resultmsgBtn button correct">Nächste Frage</a>
-						</div>
-					</div>
+                    <div class="answer-correct modal" title="Basic dialog">
+                        <p>Sehr gut! Die Antwort ist Richtig</p>
+                        <a href="/" class="button resultmsgBtn" >Weiter</a>
+                    </div>
+                    <div class="answer-wrong modal" title="Basic dialog">
+                        <p>Sorry deine Antwort war nicht leider nicht richtig.Du kannst das Fenster Schließen!</p>
+                    </div>
 					<section class="questionSection">
 
 						<h1>Frage 1</h1>

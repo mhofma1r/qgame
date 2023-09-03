@@ -5,7 +5,7 @@ $(document).ready(function () {
     $('.answerPool').hide();
     $('.questionSection').hide()
     $('.answers').hide()
-    $('.resultmsgBtn.button').hide()
+    $('.modal').hide()
     /**
      * @description contains the Applications Datascructure
      */
@@ -105,24 +105,18 @@ $(document).ready(function () {
                 let proposedAnswer = element[0].attributes.itemkey.value
                 let correctAnswer = document.qgame.lockedCorrect
                 if (proposedAnswer === 'KI') {
-                    window.location.replace("https://www.youtube.com/watch?v=GtL1huin9EE?autoplay=1")
+                    window.location.replace("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
                     return
                 }
                 if (proposedAnswer === correctAnswer) {
                     console.log('correct Triggered')
-
-                    $('.resultmsg p').html('Sehr gut! Die Antwort ist Richtig')
-                    $('.resultmsgBtn.button.false').hide()
-                    $('.resultmsgBtn.button.correct').show()
-                    $('.resultmsg').attr('title', 'correct!')
-                    $('.resultmsg').show()
-                    $(".resultmsg").dialog();
-
+                    $('.answer-correct').dialog()
                     return
                 }
+                $('.answer-wrong').dialog()
+
 
             }
-            $('.resultmsgBtn.button.correct').hide()
             $('.resultmsgBtn.button.false').show()
             $('.resultmsg').attr('title', 'false!')
             $('.resultmsg p').html('Sorry deine Antwort war leider nicht richtig.')
@@ -194,7 +188,8 @@ $(document).ready(function () {
             $('.questions').append(newElement);
         }
     });
-    $(".resultmsgBtn").click(function () {
-        $(".resultmsg").dialog("close");
-    });
+    /**
+     * @description this serction controlls what haoppens if a modalbutton is klicked
+     */
+
 })
