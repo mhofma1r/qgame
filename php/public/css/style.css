@@ -38,6 +38,7 @@ h1{
     padding: 0.8em;
 }
 .button {
+    visibility: inherit;
     margin: 0.4em 0.2em;
     display: inline-block;
     padding: 10px 20px;

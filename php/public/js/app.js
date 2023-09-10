@@ -1,11 +1,12 @@
 $(document).ready(function () {
-    $(function () {
-
-    });
     $('.answerPool').hide();
     $('.questionSection').hide()
     $('.answers').hide()
     $('.modal').hide()
+})
+
+function qGameApp(dataSrcUri) {
+
     /**
      * @description contains the Applications Datascructure
      */
@@ -39,24 +40,24 @@ $(document).ready(function () {
     function displayQuestion(questionData) {
         $('.questionSection p').html(questionData.text);
         $('.answerCardGrid').empty();
-    
+
         questionData.decoyanswer.forEach(function (answer) {
             var newAnswerElement = $('<div class="answer"><a>' + answer + '</a></div>');
             $('.answerCardGrid').append(newAnswerElement);
         });
-    
+
         $('.answer').on('mousedown', function (event) {
             //checkAnswerForAdditionalQuestions($(this), event, questionData);
             console.log("Click");
         });
-    
+
         $('.questionSection').show();
         $('.answers').fadeIn();
     }
 
     document.qgame = {
 
-        
+
         getDecoyquestionsPool: function () {
             return this.decoyquestionsPool
         },
@@ -156,13 +157,34 @@ $(document).ready(function () {
             this.updateQuestions()
             $('.answers').fadeIn()
             this.questionLocked = true;
+        },
+        appendQuestion: function (correctItem, decoyAnswers) {
+
         }
     };
 
     /**
      * @description this section loads Questions and
      */
-    $.get("questions.php", function (data) {
+
+    $.get(dataSrcUri, function (apiData) {
+        let i = 0
+        for (dataItem in apiData) {
+            let item = apiData[i];
+            let text = item.text;
+            let decoyanswers=item.decoyanswer;
+            let correct = item.correct;
+            console.log(item);
+
+
+            i++;
+        }
+    })
+
+}
+
+/*
+console.log(data);
         let questions = JSON.parse(data);
         for (linkText in questions) {
             let dataItem = questions[linkText];
@@ -186,10 +208,4 @@ $(document).ready(function () {
             })
 // Append the new element to the '.questions' div
             $('.questions').append(newElement);
-        }
-    });
-    /**
-     * @description this serction controlls what haoppens if a modalbutton is klicked
-     */
-
-})
+ */
