@@ -1,3 +1,5 @@
+(function(){
+
 $(document).ready(function () {
     $('.answerPool').hide();
     $('.questionSection').hide()
@@ -54,6 +56,11 @@ function qGameApp(dataSrcUri) {
         $('.questionSection').show();
         $('.answers').fadeIn();
     }
+
+	window.getDecoyquestionsPool =
+	getProp
+	proposedAnswer
+	window.getWorld().getEntity().getPlayer().getX();
 
     document.qgame = {
 
@@ -171,10 +178,15 @@ function qGameApp(dataSrcUri) {
         let i = 0
         for (dataItem in apiData) {
             let item = apiData[i];
+			$('.questionSection').html('<h1>API Question</h1><p>this might be it's text</p>')
             let text = item.text;
             let decoyanswers=item.decoyanswer;
+			$('.answers').html('<div itemKey="bingo"><a>bingo</a><div/>')
             let correct = item.correct;
-            console.log(item);
+            console.log({
+				"text": text,
+				"decoy": decoyAnswers
+			});
 
 
             i++;
@@ -209,3 +221,5 @@ console.log(data);
 // Append the new element to the '.questions' div
             $('.questions').append(newElement);
  */
+ 
+})();
