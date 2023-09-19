@@ -57,10 +57,8 @@ function qGameApp(dataSrcUri) {
         $('.answers').fadeIn();
     }
 
-	window.getDecoyquestionsPool =
-	getProp
-	proposedAnswer
-	window.getWorld().getEntity().getPlayer().getX();
+//	window.getDecoyquestionsPool =
+//	window.getWorld().getEntity().getPlayer().getX();
 
     document.qgame = {
 
