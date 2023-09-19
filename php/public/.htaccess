@@ -1,5 +1,5 @@
 <IfModule mod_rewrite.c>
-  ewriteEngine On
+  RewriteEngine On
   RewriteBase /
   # Remove trailing slash only if it exists
   RewriteCond %{REQUEST_FILENAME} !-d
